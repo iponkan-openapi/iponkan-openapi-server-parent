@@ -10,9 +10,11 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>iponkan-openapi-server</module>
+        <module>iponkan-web</module>
     </modules>
 
     <properties>
+        <openapi-client.version>0.0.1-SNAPSHOT</openapi-client.version>
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
     </properties>
 
@@ -20,7 +22,17 @@
         <dependencies>
             <dependency>
                 <groupId>cn.iponkan</groupId>
-                <artifactId>iponkan-openapi-client-parent</artifactId>
+                <artifactId>iponkan-openapi-api</artifactId>
+                <version>${openapi-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.iponkan</groupId>
+                <artifactId>iponkan-api</artifactId>
+                <version>${openapi-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.iponkan</groupId>
+                <artifactId>iponkan-openapi-server</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

@@ -9,20 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>iponkan-openapi-server</artifactId>
+    <artifactId>iponkan-web</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>cn.iponkan</groupId>
-            <artifactId>iponkan-openapi-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.iponkan</groupId>
-            <artifactId>iponkan-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>iponkan-openapi-server</artifactId>
         </dependency>
     </dependencies>
 
