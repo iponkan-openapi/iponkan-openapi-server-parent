@@ -8,6 +8,14 @@
     <artifactId>iponkan-openapi-server-parent</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.0.RELEASE</version>
+        <relativePath/>
+    </parent>
+
     <modules>
         <module>iponkan-openapi-server</module>
         <module>iponkan-web</module>
@@ -16,6 +24,8 @@
     <properties>
         <openapi-client.version>0.0.1-SNAPSHOT</openapi-client.version>
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <commons-logging.version>1.2</commons-logging.version>
     </properties>
 
     <dependencyManagement>
@@ -42,6 +52,17 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox-swagger2.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
