@@ -19,6 +19,7 @@
     <modules>
         <module>iponkan-openapi-server</module>
         <module>iponkan-web</module>
+        <module>iponkan-openapi-feign</module>
     </modules>
 
     <properties>
@@ -43,6 +44,11 @@
             <dependency>
                 <groupId>cn.iponkan</groupId>
                 <artifactId>iponkan-openapi-server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.iponkan</groupId>
+                <artifactId>iponkan-openapi-feign</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
